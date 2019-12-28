@@ -1,19 +1,18 @@
 {
-  "updateTime": "2019-11-19T08:38:49.010914Z",
+  "updateTime": "2019-12-28T08:47:52.993807Z",
   "sources": [
     {
       "generator": {
         "name": "artman",
-        "version": "0.42.1",
-        "dockerImage": "googleapis/artman@sha256:c773192618c608a7a0415dd95282f841f8e6bcdef7dd760a988c93b77a64bd57"
+        "version": "0.42.3",
+        "dockerImage": "googleapis/artman@sha256:feed210b5723c6f524b52ef6d7740a030f2d1a8f7c29a71c5e5b4481ceaad7f5"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "d8dd7fe8d5304f7bd1c52207703d7f27d5328c5a",
-        "internalRef": "281088257"
+        "sha": "650d7f1f8adb0cfaf37b3ce2241c3168f24efd4d"
       }
     }
   ],
@@ -27,6 +26,527 @@
         "generator": "gapic",
         "config": "grafeas/artman_grafeas_v1.yaml"
       }
+    }
+  ],
+  "newFiles": [
+    {
+      "path": "LICENSE"
+    },
+    {
+      "path": "synth.metadata"
+    },
+    {
+      "path": ".repo-metadata.json"
+    },
+    {
+      "path": "pom.xml"
+    },
+    {
+      "path": "grafeas.header"
+    },
+    {
+      "path": "synth.py"
+    },
+    {
+      "path": "license-checks.xml"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/common.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/deployment.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/provenance.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/discovery.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/grafeas.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/image.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/cvss.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/attestation.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/package.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/vulnerability.proto"
+    },
+    {
+      "path": "src/main/proto/grafeas/v1/build.proto"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/PackageNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Hash.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/PackageNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ProjectRepoIdOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/PackageOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/OccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeploymentOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/UpdateOccurrenceRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Discovery.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/OccurrenceName.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DistributionOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Distribution.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CloudRepoSourceContext.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/SourceContextOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GetOccurrenceNoteRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/package-info.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/VulnerabilityOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateOccurrencesRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Layer.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/FileHashesOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/AttestationNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BuildProvenance.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateNotesRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNoteOccurrencesRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListOccurrencesResponse.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/SignatureOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CVSSv3.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/HashOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GetOccurrenceNoteRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/FingerprintOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeleteNoteRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DiscoveryNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GerritSourceContextOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNotesRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GrafeasGrpc.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/RepoIdOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ImageOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Deployment.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListOccurrencesRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Build.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BuildOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GetNoteRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DiscoveryOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CreateOccurrenceRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateNotesResponseOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GrafeasClient.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListOccurrencesResponseOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNotesResponse.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/LayerOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Version.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/UpdateNoteRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/PackageOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DiscoveryNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CommandOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNoteOccurrencesRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/LocationOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Architecture.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Source.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/RelatedUrl.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeleteNoteRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeploymentOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNotesResponseOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateOccurrencesResponseOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/NoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ArtifactOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/SourceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GetOccurrenceRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BuildProvenanceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/AttestationNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Image.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GitSourceContextOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/AliasContextOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ProjectRepoId.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BuildNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CreateNoteRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateOccurrencesRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CVSSv3OrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Vulnerability.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Signature.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ProjectName.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Artifact.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Cvss.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Occurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CreateNoteRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Fingerprint.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CreateOccurrenceRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListOccurrencesRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNoteOccurrencesResponseOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ImageNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/NoteName.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Command.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BuildNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/AliasContext.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/VulnerabilityNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNotesRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/UpdateNoteRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GitSourceContext.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GetOccurrenceRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeleteOccurrenceRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/UpdateOccurrenceRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/NoteKind.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/RelatedUrlOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Note.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Severity.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeleteOccurrenceRequest.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/CloudRepoSourceContextOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DiscoveryOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeploymentNoteOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GrafeasOuterClass.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GetNoteRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/AttestationOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateOccurrencesResponse.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Package.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GrafeasSettings.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ImageOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/SourceContext.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Provenance.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/VulnerabilityOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BuildOccurrenceOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateNotesRequestOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Attestation.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/GerritSourceContext.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/FileHashes.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Common.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/DeploymentNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/RepoId.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ImageNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/BatchCreateNotesResponse.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/AttestationOccurrence.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/VersionOrBuilder.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/VulnerabilityNote.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/ListNoteOccurrencesResponse.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/Location.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/stub/GrpcGrafeasStub.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/stub/GrafeasStubSettings.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/stub/GrafeasStub.java"
+    },
+    {
+      "path": "src/main/java/io/grafeas/v1/stub/GrpcGrafeasCallableFactory.java"
+    },
+    {
+      "path": "src/test/java/io/grafeas/v1/MockGrafeas.java"
+    },
+    {
+      "path": "src/test/java/io/grafeas/v1/MockGrafeasImpl.java"
+    },
+    {
+      "path": "src/test/java/io/grafeas/v1/GrafeasClientTest.java"
+    },
+    {
+      "path": ".git/shallow"
+    },
+    {
+      "path": ".git/index"
+    },
+    {
+      "path": ".git/HEAD"
+    },
+    {
+      "path": ".git/config"
+    },
+    {
+      "path": ".git/packed-refs"
+    },
+    {
+      "path": ".git/logs/HEAD"
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin/HEAD"
+    },
+    {
+      "path": ".git/logs/refs/heads/autosynth"
+    },
+    {
+      "path": ".git/logs/refs/heads/master"
+    },
+    {
+      "path": ".git/objects/pack/pack-5dd66f54edfed38e93eeed48d442146584789d7e.idx"
+    },
+    {
+      "path": ".git/objects/pack/pack-5dd66f54edfed38e93eeed48d442146584789d7e.pack"
+    },
+    {
+      "path": ".git/refs/remotes/origin/HEAD"
+    },
+    {
+      "path": ".git/refs/heads/autosynth"
+    },
+    {
+      "path": ".git/refs/heads/master"
+    },
+    {
+      "path": "__pycache__/synth.cpython-36.pyc"
     }
   ]
 }
