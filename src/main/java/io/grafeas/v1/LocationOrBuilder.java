@@ -33,8 +33,6 @@ public interface LocationOrBuilder
    * </pre>
    *
    * <code>string cpe_uri = 1;</code>
-   *
-   * @return The cpeUri.
    */
   java.lang.String getCpeUri();
   /**
@@ -46,8 +44,6 @@ public interface LocationOrBuilder
    * </pre>
    *
    * <code>string cpe_uri = 1;</code>
-   *
-   * @return The bytes for cpeUri.
    */
   com.google.protobuf.ByteString getCpeUriBytes();
 
@@ -59,8 +55,6 @@ public interface LocationOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Version version = 2;</code>
-   *
-   * @return Whether the version field is set.
    */
   boolean hasVersion();
   /**
@@ -71,8 +65,6 @@ public interface LocationOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Version version = 2;</code>
-   *
-   * @return The version.
    */
   io.grafeas.v1.Version getVersion();
   /**
@@ -94,8 +86,6 @@ public interface LocationOrBuilder
    * </pre>
    *
    * <code>string path = 3;</code>
-   *
-   * @return The path.
    */
   java.lang.String getPath();
   /**
@@ -106,8 +96,6 @@ public interface LocationOrBuilder
    * </pre>
    *
    * <code>string path = 3;</code>
-   *
-   * @return The bytes for path.
    */
   com.google.protobuf.ByteString getPathBytes();
 }

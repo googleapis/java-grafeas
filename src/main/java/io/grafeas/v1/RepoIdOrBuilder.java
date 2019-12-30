@@ -32,8 +32,6 @@ public interface RepoIdOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.ProjectRepoId project_repo_id = 1;</code>
-   *
-   * @return Whether the projectRepoId field is set.
    */
   boolean hasProjectRepoId();
   /**
@@ -44,8 +42,6 @@ public interface RepoIdOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.ProjectRepoId project_repo_id = 1;</code>
-   *
-   * @return The projectRepoId.
    */
   io.grafeas.v1.ProjectRepoId getProjectRepoId();
   /**
@@ -67,8 +63,6 @@ public interface RepoIdOrBuilder
    * </pre>
    *
    * <code>string uid = 2;</code>
-   *
-   * @return The uid.
    */
   java.lang.String getUid();
   /**
@@ -79,8 +73,6 @@ public interface RepoIdOrBuilder
    * </pre>
    *
    * <code>string uid = 2;</code>
-   *
-   * @return The bytes for uid.
    */
   com.google.protobuf.ByteString getUidBytes();
 

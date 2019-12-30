@@ -33,8 +33,6 @@ public interface UpdateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
-   *
-   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -46,8 +44,6 @@ public interface UpdateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
-   *
-   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -59,8 +55,6 @@ public interface UpdateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Occurrence occurrence = 2;</code>
-   *
-   * @return Whether the occurrence field is set.
    */
   boolean hasOccurrence();
   /**
@@ -71,8 +65,6 @@ public interface UpdateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Occurrence occurrence = 2;</code>
-   *
-   * @return The occurrence.
    */
   io.grafeas.v1.Occurrence getOccurrence();
   /**
@@ -94,8 +86,6 @@ public interface UpdateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 3;</code>
-   *
-   * @return Whether the updateMask field is set.
    */
   boolean hasUpdateMask();
   /**
@@ -106,8 +96,6 @@ public interface UpdateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 3;</code>
-   *
-   * @return The updateMask.
    */
   com.google.protobuf.FieldMask getUpdateMask();
   /**

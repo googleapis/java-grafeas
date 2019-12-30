@@ -32,8 +32,6 @@ public interface DiscoveryOccurrenceOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.DiscoveryOccurrence.ContinuousAnalysis continuous_analysis = 1;</code>
-   *
-   * @return The enum numeric value on the wire for continuousAnalysis.
    */
   int getContinuousAnalysisValue();
   /**
@@ -44,8 +42,6 @@ public interface DiscoveryOccurrenceOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.DiscoveryOccurrence.ContinuousAnalysis continuous_analysis = 1;</code>
-   *
-   * @return The continuousAnalysis.
    */
   io.grafeas.v1.DiscoveryOccurrence.ContinuousAnalysis getContinuousAnalysis();
 
@@ -57,8 +53,6 @@ public interface DiscoveryOccurrenceOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.DiscoveryOccurrence.AnalysisStatus analysis_status = 2;</code>
-   *
-   * @return The enum numeric value on the wire for analysisStatus.
    */
   int getAnalysisStatusValue();
   /**
@@ -69,8 +63,6 @@ public interface DiscoveryOccurrenceOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.DiscoveryOccurrence.AnalysisStatus analysis_status = 2;</code>
-   *
-   * @return The analysisStatus.
    */
   io.grafeas.v1.DiscoveryOccurrence.AnalysisStatus getAnalysisStatus();
 
@@ -84,8 +76,6 @@ public interface DiscoveryOccurrenceOrBuilder
    * </pre>
    *
    * <code>.google.rpc.Status analysis_status_error = 3;</code>
-   *
-   * @return Whether the analysisStatusError field is set.
    */
   boolean hasAnalysisStatusError();
   /**
@@ -98,8 +88,6 @@ public interface DiscoveryOccurrenceOrBuilder
    * </pre>
    *
    * <code>.google.rpc.Status analysis_status_error = 3;</code>
-   *
-   * @return The analysisStatusError.
    */
   com.google.rpc.Status getAnalysisStatusError();
   /**

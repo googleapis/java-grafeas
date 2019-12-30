@@ -46,12 +46,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
   }
 
   @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new PackageNote();
-  }
-
-  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -84,9 +78,9 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
             }
           case 82:
             {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 distribution_ = new java.util.ArrayList<io.grafeas.v1.Distribution>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               distribution_.add(
                   input.readMessage(io.grafeas.v1.Distribution.parser(), extensionRegistry));
@@ -106,7 +100,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
         distribution_ = java.util.Collections.unmodifiableList(distribution_);
       }
       this.unknownFields = unknownFields.build();
@@ -126,6 +120,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
             io.grafeas.v1.PackageNote.class, io.grafeas.v1.PackageNote.Builder.class);
   }
 
+  private int bitField0_;
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
@@ -136,8 +131,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
-   *
-   * @return The name.
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -158,8 +151,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
-   *
-   * @return The bytes for name.
    */
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
@@ -455,7 +446,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
 
       if (distributionBuilder_ == null) {
         distribution_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
         distributionBuilder_.clear();
       }
@@ -485,16 +476,18 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
     public io.grafeas.v1.PackageNote buildPartial() {
       io.grafeas.v1.PackageNote result = new io.grafeas.v1.PackageNote(this);
       int from_bitField0_ = bitField0_;
+      int to_bitField0_ = 0;
       result.name_ = name_;
       if (distributionBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           distribution_ = java.util.Collections.unmodifiableList(distribution_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.distribution_ = distribution_;
       } else {
         result.distribution_ = distributionBuilder_.build();
       }
+      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -552,7 +545,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
         if (!other.distribution_.isEmpty()) {
           if (distribution_.isEmpty()) {
             distribution_ = other.distribution_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureDistributionIsMutable();
             distribution_.addAll(other.distribution_);
@@ -565,7 +558,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
             distributionBuilder_.dispose();
             distributionBuilder_ = null;
             distribution_ = other.distribution_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
             distributionBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getDistributionFieldBuilder()
@@ -615,8 +608,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -637,8 +628,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -659,9 +648,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @param value The name to set.
-     * @return This builder for chaining.
      */
     public Builder setName(java.lang.String value) {
       if (value == null) {
@@ -680,8 +666,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @return This builder for chaining.
      */
     public Builder clearName() {
 
@@ -697,9 +681,6 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @param value The bytes for name to set.
-     * @return This builder for chaining.
      */
     public Builder setNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -716,9 +697,9 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
         java.util.Collections.emptyList();
 
     private void ensureDistributionIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         distribution_ = new java.util.ArrayList<io.grafeas.v1.Distribution>(distribution_);
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
       }
     }
 
@@ -931,7 +912,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
     public Builder clearDistribution() {
       if (distributionBuilder_ == null) {
         distribution_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         distributionBuilder_.clear();
@@ -1052,7 +1033,7 @@ public final class PackageNote extends com.google.protobuf.GeneratedMessageV3
                 io.grafeas.v1.Distribution,
                 io.grafeas.v1.Distribution.Builder,
                 io.grafeas.v1.DistributionOrBuilder>(
-                distribution_, ((bitField0_ & 0x00000001) != 0), getParentForChildren(), isClean());
+                distribution_, ((bitField0_ & 0x00000002) != 0), getParentForChildren(), isClean());
         distribution_ = null;
       }
       return distributionBuilder_;

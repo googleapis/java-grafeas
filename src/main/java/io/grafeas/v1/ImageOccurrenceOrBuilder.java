@@ -32,8 +32,6 @@ public interface ImageOccurrenceOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Fingerprint fingerprint = 1;</code>
-   *
-   * @return Whether the fingerprint field is set.
    */
   boolean hasFingerprint();
   /**
@@ -44,8 +42,6 @@ public interface ImageOccurrenceOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Fingerprint fingerprint = 1;</code>
-   *
-   * @return The fingerprint.
    */
   io.grafeas.v1.Fingerprint getFingerprint();
   /**
@@ -68,8 +64,6 @@ public interface ImageOccurrenceOrBuilder
    * </pre>
    *
    * <code>int32 distance = 2;</code>
-   *
-   * @return The distance.
    */
   int getDistance();
 
@@ -143,8 +137,6 @@ public interface ImageOccurrenceOrBuilder
    * </pre>
    *
    * <code>string base_resource_url = 4;</code>
-   *
-   * @return The baseResourceUrl.
    */
   java.lang.String getBaseResourceUrl();
   /**
@@ -156,8 +148,6 @@ public interface ImageOccurrenceOrBuilder
    * </pre>
    *
    * <code>string base_resource_url = 4;</code>
-   *
-   * @return The bytes for baseResourceUrl.
    */
   com.google.protobuf.ByteString getBaseResourceUrlBytes();
 }

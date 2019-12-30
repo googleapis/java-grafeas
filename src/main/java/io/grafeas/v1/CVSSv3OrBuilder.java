@@ -32,23 +32,13 @@ public interface CVSSv3OrBuilder
    * </pre>
    *
    * <code>float base_score = 1;</code>
-   *
-   * @return The baseScore.
    */
   float getBaseScore();
 
-  /**
-   * <code>float exploitability_score = 2;</code>
-   *
-   * @return The exploitabilityScore.
-   */
+  /** <code>float exploitability_score = 2;</code> */
   float getExploitabilityScore();
 
-  /**
-   * <code>float impact_score = 3;</code>
-   *
-   * @return The impactScore.
-   */
+  /** <code>float impact_score = 3;</code> */
   float getImpactScore();
 
   /**
@@ -61,8 +51,6 @@ public interface CVSSv3OrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.CVSSv3.AttackVector attack_vector = 5;</code>
-   *
-   * @return The enum numeric value on the wire for attackVector.
    */
   int getAttackVectorValue();
   /**
@@ -75,99 +63,41 @@ public interface CVSSv3OrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.CVSSv3.AttackVector attack_vector = 5;</code>
-   *
-   * @return The attackVector.
    */
   io.grafeas.v1.CVSSv3.AttackVector getAttackVector();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.AttackComplexity attack_complexity = 6;</code>
-   *
-   * @return The enum numeric value on the wire for attackComplexity.
-   */
+  /** <code>.grafeas.v1.CVSSv3.AttackComplexity attack_complexity = 6;</code> */
   int getAttackComplexityValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.AttackComplexity attack_complexity = 6;</code>
-   *
-   * @return The attackComplexity.
-   */
+  /** <code>.grafeas.v1.CVSSv3.AttackComplexity attack_complexity = 6;</code> */
   io.grafeas.v1.CVSSv3.AttackComplexity getAttackComplexity();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.PrivilegesRequired privileges_required = 7;</code>
-   *
-   * @return The enum numeric value on the wire for privilegesRequired.
-   */
+  /** <code>.grafeas.v1.CVSSv3.PrivilegesRequired privileges_required = 7;</code> */
   int getPrivilegesRequiredValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.PrivilegesRequired privileges_required = 7;</code>
-   *
-   * @return The privilegesRequired.
-   */
+  /** <code>.grafeas.v1.CVSSv3.PrivilegesRequired privileges_required = 7;</code> */
   io.grafeas.v1.CVSSv3.PrivilegesRequired getPrivilegesRequired();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.UserInteraction user_interaction = 8;</code>
-   *
-   * @return The enum numeric value on the wire for userInteraction.
-   */
+  /** <code>.grafeas.v1.CVSSv3.UserInteraction user_interaction = 8;</code> */
   int getUserInteractionValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.UserInteraction user_interaction = 8;</code>
-   *
-   * @return The userInteraction.
-   */
+  /** <code>.grafeas.v1.CVSSv3.UserInteraction user_interaction = 8;</code> */
   io.grafeas.v1.CVSSv3.UserInteraction getUserInteraction();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.Scope scope = 9;</code>
-   *
-   * @return The enum numeric value on the wire for scope.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Scope scope = 9;</code> */
   int getScopeValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.Scope scope = 9;</code>
-   *
-   * @return The scope.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Scope scope = 9;</code> */
   io.grafeas.v1.CVSSv3.Scope getScope();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.Impact confidentiality_impact = 10;</code>
-   *
-   * @return The enum numeric value on the wire for confidentialityImpact.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Impact confidentiality_impact = 10;</code> */
   int getConfidentialityImpactValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.Impact confidentiality_impact = 10;</code>
-   *
-   * @return The confidentialityImpact.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Impact confidentiality_impact = 10;</code> */
   io.grafeas.v1.CVSSv3.Impact getConfidentialityImpact();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.Impact integrity_impact = 11;</code>
-   *
-   * @return The enum numeric value on the wire for integrityImpact.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Impact integrity_impact = 11;</code> */
   int getIntegrityImpactValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.Impact integrity_impact = 11;</code>
-   *
-   * @return The integrityImpact.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Impact integrity_impact = 11;</code> */
   io.grafeas.v1.CVSSv3.Impact getIntegrityImpact();
 
-  /**
-   * <code>.grafeas.v1.CVSSv3.Impact availability_impact = 12;</code>
-   *
-   * @return The enum numeric value on the wire for availabilityImpact.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Impact availability_impact = 12;</code> */
   int getAvailabilityImpactValue();
-  /**
-   * <code>.grafeas.v1.CVSSv3.Impact availability_impact = 12;</code>
-   *
-   * @return The availabilityImpact.
-   */
+  /** <code>.grafeas.v1.CVSSv3.Impact availability_impact = 12;</code> */
   io.grafeas.v1.CVSSv3.Impact getAvailabilityImpact();
 }

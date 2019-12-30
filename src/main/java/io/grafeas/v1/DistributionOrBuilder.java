@@ -33,8 +33,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string cpe_uri = 1;</code>
-   *
-   * @return The cpeUri.
    */
   java.lang.String getCpeUri();
   /**
@@ -46,8 +44,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string cpe_uri = 1;</code>
-   *
-   * @return The bytes for cpeUri.
    */
   com.google.protobuf.ByteString getCpeUriBytes();
 
@@ -60,8 +56,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Architecture architecture = 2;</code>
-   *
-   * @return The enum numeric value on the wire for architecture.
    */
   int getArchitectureValue();
   /**
@@ -73,8 +67,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Architecture architecture = 2;</code>
-   *
-   * @return The architecture.
    */
   io.grafeas.v1.Architecture getArchitecture();
 
@@ -86,8 +78,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Version latest_version = 3;</code>
-   *
-   * @return Whether the latestVersion field is set.
    */
   boolean hasLatestVersion();
   /**
@@ -98,8 +88,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Version latest_version = 3;</code>
-   *
-   * @return The latestVersion.
    */
   io.grafeas.v1.Version getLatestVersion();
   /**
@@ -121,8 +109,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string maintainer = 4;</code>
-   *
-   * @return The maintainer.
    */
   java.lang.String getMaintainer();
   /**
@@ -133,8 +119,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string maintainer = 4;</code>
-   *
-   * @return The bytes for maintainer.
    */
   com.google.protobuf.ByteString getMaintainerBytes();
 
@@ -146,8 +130,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string url = 5;</code>
-   *
-   * @return The url.
    */
   java.lang.String getUrl();
   /**
@@ -158,8 +140,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string url = 5;</code>
-   *
-   * @return The bytes for url.
    */
   com.google.protobuf.ByteString getUrlBytes();
 
@@ -171,8 +151,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string description = 6;</code>
-   *
-   * @return The description.
    */
   java.lang.String getDescription();
   /**
@@ -183,8 +161,6 @@ public interface DistributionOrBuilder
    * </pre>
    *
    * <code>string description = 6;</code>
-   *
-   * @return The bytes for description.
    */
   com.google.protobuf.ByteString getDescriptionBytes();
 }

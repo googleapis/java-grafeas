@@ -44,12 +44,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
   }
 
   @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new PackageOccurrence();
-  }
-
-  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -82,9 +76,9 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
             }
           case 18:
             {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 location_ = new java.util.ArrayList<io.grafeas.v1.Location>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               location_.add(input.readMessage(io.grafeas.v1.Location.parser(), extensionRegistry));
               break;
@@ -103,7 +97,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
         location_ = java.util.Collections.unmodifiableList(location_);
       }
       this.unknownFields = unknownFields.build();
@@ -123,6 +117,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
             io.grafeas.v1.PackageOccurrence.class, io.grafeas.v1.PackageOccurrence.Builder.class);
   }
 
+  private int bitField0_;
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
@@ -133,8 +128,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
    * </pre>
    *
    * <code>string name = 1;</code>
-   *
-   * @return The name.
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -155,8 +148,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
    * </pre>
    *
    * <code>string name = 1;</code>
-   *
-   * @return The bytes for name.
    */
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
@@ -454,7 +445,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
 
       if (locationBuilder_ == null) {
         location_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
         locationBuilder_.clear();
       }
@@ -484,16 +475,18 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
     public io.grafeas.v1.PackageOccurrence buildPartial() {
       io.grafeas.v1.PackageOccurrence result = new io.grafeas.v1.PackageOccurrence(this);
       int from_bitField0_ = bitField0_;
+      int to_bitField0_ = 0;
       result.name_ = name_;
       if (locationBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           location_ = java.util.Collections.unmodifiableList(location_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.location_ = location_;
       } else {
         result.location_ = locationBuilder_.build();
       }
+      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -551,7 +544,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
         if (!other.location_.isEmpty()) {
           if (location_.isEmpty()) {
             location_ = other.location_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureLocationIsMutable();
             location_.addAll(other.location_);
@@ -564,7 +557,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
             locationBuilder_.dispose();
             locationBuilder_ = null;
             location_ = other.location_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
             locationBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getLocationFieldBuilder()
@@ -614,8 +607,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -636,8 +627,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -658,9 +647,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @param value The name to set.
-     * @return This builder for chaining.
      */
     public Builder setName(java.lang.String value) {
       if (value == null) {
@@ -679,8 +665,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @return This builder for chaining.
      */
     public Builder clearName() {
 
@@ -696,9 +680,6 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
      * </pre>
      *
      * <code>string name = 1;</code>
-     *
-     * @param value The bytes for name to set.
-     * @return This builder for chaining.
      */
     public Builder setNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -714,9 +695,9 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
     private java.util.List<io.grafeas.v1.Location> location_ = java.util.Collections.emptyList();
 
     private void ensureLocationIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         location_ = new java.util.ArrayList<io.grafeas.v1.Location>(location_);
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
       }
     }
 
@@ -937,7 +918,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
     public Builder clearLocation() {
       if (locationBuilder_ == null) {
         location_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         locationBuilder_.clear();
@@ -1061,7 +1042,7 @@ public final class PackageOccurrence extends com.google.protobuf.GeneratedMessag
                 io.grafeas.v1.Location,
                 io.grafeas.v1.Location.Builder,
                 io.grafeas.v1.LocationOrBuilder>(
-                location_, ((bitField0_ & 0x00000001) != 0), getParentForChildren(), isClean());
+                location_, ((bitField0_ & 0x00000002) != 0), getParentForChildren(), isClean());
         location_ = null;
       }
       return locationBuilder_;

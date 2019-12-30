@@ -32,8 +32,6 @@ public interface HashOrBuilder
    * </pre>
    *
    * <code>string type = 1;</code>
-   *
-   * @return The type.
    */
   java.lang.String getType();
   /**
@@ -44,8 +42,6 @@ public interface HashOrBuilder
    * </pre>
    *
    * <code>string type = 1;</code>
-   *
-   * @return The bytes for type.
    */
   com.google.protobuf.ByteString getTypeBytes();
 
@@ -57,8 +53,6 @@ public interface HashOrBuilder
    * </pre>
    *
    * <code>bytes value = 2;</code>
-   *
-   * @return The value.
    */
   com.google.protobuf.ByteString getValue();
 }

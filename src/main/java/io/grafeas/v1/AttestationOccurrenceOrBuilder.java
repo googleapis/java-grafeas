@@ -33,8 +33,6 @@ public interface AttestationOccurrenceOrBuilder
    * </pre>
    *
    * <code>bytes serialized_payload = 1;</code>
-   *
-   * @return The serializedPayload.
    */
   com.google.protobuf.ByteString getSerializedPayload();
 

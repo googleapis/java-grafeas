@@ -42,12 +42,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
   private SourceContext() {}
 
   @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new SourceContext();
-  }
-
-  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -119,10 +113,10 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
             }
           case 34:
             {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 labels_ =
                     com.google.protobuf.MapField.newMapField(LabelsDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000008;
               }
               com.google.protobuf.MapEntry<java.lang.String, java.lang.String> labels__ =
                   input.readMessage(
@@ -172,13 +166,11 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
             io.grafeas.v1.SourceContext.class, io.grafeas.v1.SourceContext.Builder.class);
   }
 
+  private int bitField0_;
   private int contextCase_ = 0;
   private java.lang.Object context_;
 
-  public enum ContextCase
-      implements
-          com.google.protobuf.Internal.EnumLite,
-          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+  public enum ContextCase implements com.google.protobuf.Internal.EnumLite {
     CLOUD_REPO(1),
     GERRIT(2),
     GIT(3),
@@ -188,11 +180,7 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
     private ContextCase(int value) {
       this.value = value;
     }
-    /**
-     * @param value The number of the enum to look for.
-     * @return The enum associated with the given number.
-     * @deprecated Use {@link #forNumber(int)} instead.
-     */
+    /** @deprecated Use {@link #forNumber(int)} instead. */
     @java.lang.Deprecated
     public static ContextCase valueOf(int value) {
       return forNumber(value);
@@ -231,8 +219,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.grafeas.v1.CloudRepoSourceContext cloud_repo = 1;</code>
-   *
-   * @return Whether the cloudRepo field is set.
    */
   public boolean hasCloudRepo() {
     return contextCase_ == 1;
@@ -245,8 +231,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.grafeas.v1.CloudRepoSourceContext cloud_repo = 1;</code>
-   *
-   * @return The cloudRepo.
    */
   public io.grafeas.v1.CloudRepoSourceContext getCloudRepo() {
     if (contextCase_ == 1) {
@@ -279,8 +263,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.grafeas.v1.GerritSourceContext gerrit = 2;</code>
-   *
-   * @return Whether the gerrit field is set.
    */
   public boolean hasGerrit() {
     return contextCase_ == 2;
@@ -293,8 +275,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.grafeas.v1.GerritSourceContext gerrit = 2;</code>
-   *
-   * @return The gerrit.
    */
   public io.grafeas.v1.GerritSourceContext getGerrit() {
     if (contextCase_ == 2) {
@@ -327,8 +307,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.grafeas.v1.GitSourceContext git = 3;</code>
-   *
-   * @return Whether the git field is set.
    */
   public boolean hasGit() {
     return contextCase_ == 3;
@@ -341,8 +319,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.grafeas.v1.GitSourceContext git = 3;</code>
-   *
-   * @return The git.
    */
   public io.grafeas.v1.GitSourceContext getGit() {
     if (contextCase_ == 3) {
@@ -770,6 +746,7 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
     public io.grafeas.v1.SourceContext buildPartial() {
       io.grafeas.v1.SourceContext result = new io.grafeas.v1.SourceContext(this);
       int from_bitField0_ = bitField0_;
+      int to_bitField0_ = 0;
       if (contextCase_ == 1) {
         if (cloudRepoBuilder_ == null) {
           result.context_ = context_;
@@ -793,6 +770,7 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
       }
       result.labels_ = internalGetLabels();
       result.labels_.makeImmutable();
+      result.bitField0_ = to_bitField0_;
       result.contextCase_ = contextCase_;
       onBuilt();
       return result;
@@ -923,8 +901,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.grafeas.v1.CloudRepoSourceContext cloud_repo = 1;</code>
-     *
-     * @return Whether the cloudRepo field is set.
      */
     public boolean hasCloudRepo() {
       return contextCase_ == 1;
@@ -937,8 +913,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.grafeas.v1.CloudRepoSourceContext cloud_repo = 1;</code>
-     *
-     * @return The cloudRepo.
      */
     public io.grafeas.v1.CloudRepoSourceContext getCloudRepo() {
       if (cloudRepoBuilder_ == null) {
@@ -1126,8 +1100,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.grafeas.v1.GerritSourceContext gerrit = 2;</code>
-     *
-     * @return Whether the gerrit field is set.
      */
     public boolean hasGerrit() {
       return contextCase_ == 2;
@@ -1140,8 +1112,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.grafeas.v1.GerritSourceContext gerrit = 2;</code>
-     *
-     * @return The gerrit.
      */
     public io.grafeas.v1.GerritSourceContext getGerrit() {
       if (gerritBuilder_ == null) {
@@ -1329,8 +1299,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.grafeas.v1.GitSourceContext git = 3;</code>
-     *
-     * @return Whether the git field is set.
      */
     public boolean hasGit() {
       return contextCase_ == 3;
@@ -1343,8 +1311,6 @@ public final class SourceContext extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.grafeas.v1.GitSourceContext git = 3;</code>
-     *
-     * @return The git.
      */
     public io.grafeas.v1.GitSourceContext getGit() {
       if (gitBuilder_ == null) {

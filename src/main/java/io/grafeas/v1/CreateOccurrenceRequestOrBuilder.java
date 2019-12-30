@@ -33,8 +33,6 @@ public interface CreateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
-   *
-   * @return The parent.
    */
   java.lang.String getParent();
   /**
@@ -46,8 +44,6 @@ public interface CreateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
-   *
-   * @return The bytes for parent.
    */
   com.google.protobuf.ByteString getParentBytes();
 
@@ -59,8 +55,6 @@ public interface CreateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Occurrence occurrence = 2;</code>
-   *
-   * @return Whether the occurrence field is set.
    */
   boolean hasOccurrence();
   /**
@@ -71,8 +65,6 @@ public interface CreateOccurrenceRequestOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Occurrence occurrence = 2;</code>
-   *
-   * @return The occurrence.
    */
   io.grafeas.v1.Occurrence getOccurrence();
   /**

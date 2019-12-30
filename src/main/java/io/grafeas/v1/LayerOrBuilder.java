@@ -33,8 +33,6 @@ public interface LayerOrBuilder
    * </pre>
    *
    * <code>string directive = 1;</code>
-   *
-   * @return The directive.
    */
   java.lang.String getDirective();
   /**
@@ -46,8 +44,6 @@ public interface LayerOrBuilder
    * </pre>
    *
    * <code>string directive = 1;</code>
-   *
-   * @return The bytes for directive.
    */
   com.google.protobuf.ByteString getDirectiveBytes();
 
@@ -59,8 +55,6 @@ public interface LayerOrBuilder
    * </pre>
    *
    * <code>string arguments = 2;</code>
-   *
-   * @return The arguments.
    */
   java.lang.String getArguments();
   /**
@@ -71,8 +65,6 @@ public interface LayerOrBuilder
    * </pre>
    *
    * <code>string arguments = 2;</code>
-   *
-   * @return The bytes for arguments.
    */
   com.google.protobuf.ByteString getArgumentsBytes();
 }

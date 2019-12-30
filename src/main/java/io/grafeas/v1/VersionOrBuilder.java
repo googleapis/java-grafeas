@@ -32,8 +32,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>int32 epoch = 1;</code>
-   *
-   * @return The epoch.
    */
   int getEpoch();
 
@@ -46,8 +44,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>string name = 2;</code>
-   *
-   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -59,8 +55,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>string name = 2;</code>
-   *
-   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -72,8 +66,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>string revision = 3;</code>
-   *
-   * @return The revision.
    */
   java.lang.String getRevision();
   /**
@@ -84,8 +76,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>string revision = 3;</code>
-   *
-   * @return The bytes for revision.
    */
   com.google.protobuf.ByteString getRevisionBytes();
 
@@ -98,8 +88,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Version.VersionKind kind = 4;</code>
-   *
-   * @return The enum numeric value on the wire for kind.
    */
   int getKindValue();
   /**
@@ -111,8 +99,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>.grafeas.v1.Version.VersionKind kind = 4;</code>
-   *
-   * @return The kind.
    */
   io.grafeas.v1.Version.VersionKind getKind();
 
@@ -125,8 +111,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>string full_name = 5;</code>
-   *
-   * @return The fullName.
    */
   java.lang.String getFullName();
   /**
@@ -138,8 +122,6 @@ public interface VersionOrBuilder
    * </pre>
    *
    * <code>string full_name = 5;</code>
-   *
-   * @return The bytes for fullName.
    */
   com.google.protobuf.ByteString getFullNameBytes();
 }

@@ -64,12 +64,20 @@ public final class Discovery {
           + "e.golang.org/genproto/googleapis/grafeas"
           + "/v1;grafeas\242\002\003GRAb\006proto3"
     };
-    descriptor =
-        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData,
-            new com.google.protobuf.Descriptors.FileDescriptor[] {
-              com.google.rpc.StatusProto.getDescriptor(), io.grafeas.v1.Common.getDescriptor(),
-            });
+    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+        new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
+    com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
+        descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.rpc.StatusProto.getDescriptor(), io.grafeas.v1.Common.getDescriptor(),
+        },
+        assigner);
     internal_static_grafeas_v1_DiscoveryNote_descriptor = getDescriptor().getMessageTypes().get(0);
     internal_static_grafeas_v1_DiscoveryNote_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
