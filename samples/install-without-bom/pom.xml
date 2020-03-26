@@ -29,7 +29,7 @@
     <dependency>
       <groupId>io.grafeas</groupId>
       <artifactId>grafeas</artifactId>
-      <version></version>
+      <version>0.24.0</version>
     </dependency>
     <!-- [END grafeas_install_without_bom] -->
 
