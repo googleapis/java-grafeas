@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-grafeas.git",
+        "sha": "ecdbc2635cfa6f2fc1ee148b204c262ce105f987"
+      }
+    },
+    {
+      "git": {
+        "name": "synthtool",
+        "remote": "https://github.com/googleapis/synthtool.git",
+        "sha": "487eba79f8260e34205d8ceb1ebcc65685085e19"
+      }
+    }
+  ]
+}
