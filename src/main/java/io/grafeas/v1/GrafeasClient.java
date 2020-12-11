@@ -440,7 +440,7 @@ public class GrafeasClient implements BackgroundResource {
    * @param name The name of the occurrence in the form of
    *     `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]`.
    * @param occurrence The updated occurrence.
-   * @param update_mask The fields to update.
+   * @param updateMask The fields to update.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Occurrence updateOccurrence(
@@ -461,7 +461,7 @@ public class GrafeasClient implements BackgroundResource {
    * @param name The name of the occurrence in the form of
    *     `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]`.
    * @param occurrence The updated occurrence.
-   * @param update_mask The fields to update.
+   * @param updateMask The fields to update.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Occurrence updateOccurrence(
@@ -710,7 +710,7 @@ public class GrafeasClient implements BackgroundResource {
    *
    * @param parent The name of the project in the form of `projects/[PROJECT_ID]`, under which the
    *     note is to be created.
-   * @param note_id The ID to use for this note.
+   * @param noteId The ID to use for this note.
    * @param note The note to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -730,7 +730,7 @@ public class GrafeasClient implements BackgroundResource {
    *
    * @param parent The name of the project in the form of `projects/[PROJECT_ID]`, under which the
    *     note is to be created.
-   * @param note_id The ID to use for this note.
+   * @param noteId The ID to use for this note.
    * @param note The note to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -823,7 +823,7 @@ public class GrafeasClient implements BackgroundResource {
    *
    * @param name The name of the note in the form of `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
    * @param note The updated note.
-   * @param update_mask The fields to update.
+   * @param updateMask The fields to update.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Note updateNote(NoteName name, Note note, FieldMask updateMask) {
@@ -842,7 +842,7 @@ public class GrafeasClient implements BackgroundResource {
    *
    * @param name The name of the note in the form of `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
    * @param note The updated note.
-   * @param update_mask The fields to update.
+   * @param updateMask The fields to update.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Note updateNote(String name, Note note, FieldMask updateMask) {

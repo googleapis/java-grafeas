@@ -245,11 +245,19 @@ public class GrpcGrafeasStub extends GrafeasStub {
         GrafeasStubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcGrafeasStub, using the given settings. This is protected so that
+   * it is easy to make a subclass, but otherwise, the static factory methods should be preferred.
+   */
   protected GrpcGrafeasStub(GrafeasStubSettings settings, ClientContext clientContext)
       throws IOException {
     this(settings, clientContext, new GrpcGrafeasCallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcGrafeasStub, using the given settings. This is protected so that
+   * it is easy to make a subclass, but otherwise, the static factory methods should be preferred.
+   */
   protected GrpcGrafeasStub(
       GrafeasStubSettings settings,
       ClientContext clientContext,
