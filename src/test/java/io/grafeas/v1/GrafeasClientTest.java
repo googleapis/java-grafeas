@@ -91,8 +91,8 @@ public class GrafeasClientTest {
     Occurrence expectedResponse =
         Occurrence.newBuilder()
             .setName(OccurrenceName.of("[PROJECT]", "[OCCURRENCE]").toString())
-            .setResourceUri("resource_uri-384040517")
-            .setNoteName("note_name1780787896")
+            .setResourceUri("resourceUri1234527870")
+            .setNoteName("noteName1580946845")
             .setRemediation("remediation779381797")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -134,8 +134,8 @@ public class GrafeasClientTest {
     Occurrence expectedResponse =
         Occurrence.newBuilder()
             .setName(OccurrenceName.of("[PROJECT]", "[OCCURRENCE]").toString())
-            .setResourceUri("resource_uri-384040517")
-            .setNoteName("note_name1780787896")
+            .setResourceUri("resourceUri1234527870")
+            .setNoteName("noteName1580946845")
             .setRemediation("remediation779381797")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -339,8 +339,8 @@ public class GrafeasClientTest {
     Occurrence expectedResponse =
         Occurrence.newBuilder()
             .setName(OccurrenceName.of("[PROJECT]", "[OCCURRENCE]").toString())
-            .setResourceUri("resource_uri-384040517")
-            .setNoteName("note_name1780787896")
+            .setResourceUri("resourceUri1234527870")
+            .setNoteName("noteName1580946845")
             .setRemediation("remediation779381797")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -385,8 +385,8 @@ public class GrafeasClientTest {
     Occurrence expectedResponse =
         Occurrence.newBuilder()
             .setName(OccurrenceName.of("[PROJECT]", "[OCCURRENCE]").toString())
-            .setResourceUri("resource_uri-384040517")
-            .setNoteName("note_name1780787896")
+            .setResourceUri("resourceUri1234527870")
+            .setNoteName("noteName1580946845")
             .setRemediation("remediation779381797")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -517,8 +517,8 @@ public class GrafeasClientTest {
     Occurrence expectedResponse =
         Occurrence.newBuilder()
             .setName(OccurrenceName.of("[PROJECT]", "[OCCURRENCE]").toString())
-            .setResourceUri("resource_uri-384040517")
-            .setNoteName("note_name1780787896")
+            .setResourceUri("resourceUri1234527870")
+            .setNoteName("noteName1580946845")
             .setRemediation("remediation779381797")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -566,8 +566,8 @@ public class GrafeasClientTest {
     Occurrence expectedResponse =
         Occurrence.newBuilder()
             .setName(OccurrenceName.of("[PROJECT]", "[OCCURRENCE]").toString())
-            .setResourceUri("resource_uri-384040517")
-            .setNoteName("note_name1780787896")
+            .setResourceUri("resourceUri1234527870")
+            .setNoteName("noteName1580946845")
             .setRemediation("remediation779381797")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -615,8 +615,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -660,8 +660,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -705,8 +705,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -750,8 +750,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -957,8 +957,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -968,7 +968,7 @@ public class GrafeasClientTest {
     mockGrafeas.addResponse(expectedResponse);
 
     ProjectName parent = ProjectName.of("[PROJECT]");
-    String noteId = "note_id2129224840";
+    String noteId = "noteId-1039694675";
     Note note = Note.newBuilder().build();
 
     Note actualResponse = client.createNote(parent, noteId, note);
@@ -994,7 +994,7 @@ public class GrafeasClientTest {
 
     try {
       ProjectName parent = ProjectName.of("[PROJECT]");
-      String noteId = "note_id2129224840";
+      String noteId = "noteId-1039694675";
       Note note = Note.newBuilder().build();
       client.createNote(parent, noteId, note);
       Assert.fail("No exception raised");
@@ -1008,8 +1008,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -1019,7 +1019,7 @@ public class GrafeasClientTest {
     mockGrafeas.addResponse(expectedResponse);
 
     String parent = "parent-995424086";
-    String noteId = "note_id2129224840";
+    String noteId = "noteId-1039694675";
     Note note = Note.newBuilder().build();
 
     Note actualResponse = client.createNote(parent, noteId, note);
@@ -1045,7 +1045,7 @@ public class GrafeasClientTest {
 
     try {
       String parent = "parent-995424086";
-      String noteId = "note_id2129224840";
+      String noteId = "noteId-1039694675";
       Note note = Note.newBuilder().build();
       client.createNote(parent, noteId, note);
       Assert.fail("No exception raised");
@@ -1137,8 +1137,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -1188,8 +1188,8 @@ public class GrafeasClientTest {
     Note expectedResponse =
         Note.newBuilder()
             .setName(NoteName.of("[PROJECT]", "[NOTE]").toString())
-            .setShortDescription("short_description-235369287")
-            .setLongDescription("long_description-1747792199")
+            .setShortDescription("shortDescription1951089120")
+            .setLongDescription("longDescription1763753952")
             .addAllRelatedUrl(new ArrayList<RelatedUrl>())
             .setExpirationTime(Timestamp.newBuilder().build())
             .setCreateTime(Timestamp.newBuilder().build())
