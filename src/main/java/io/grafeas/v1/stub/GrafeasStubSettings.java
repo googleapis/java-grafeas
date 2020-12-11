@@ -70,7 +70,6 @@ import io.grafeas.v1.UpdateNoteRequest;
 import io.grafeas.v1.UpdateOccurrenceRequest;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import javax.annotation.Generated;
 import org.threeten.bp.Duration;
 
@@ -166,7 +165,7 @@ public class GrafeasStubSettings extends StubSettings<GrafeasStubSettings> {
 
             @Override
             public Iterable<Occurrence> extractResources(ListOccurrencesResponse payload) {
-              return Objects.isNull(payload.getOccurrencesList())
+              return payload.getOccurrencesList() == null
                   ? ImmutableList.<Occurrence>of()
                   : payload.getOccurrencesList();
             }
@@ -202,7 +201,7 @@ public class GrafeasStubSettings extends StubSettings<GrafeasStubSettings> {
 
             @Override
             public Iterable<Note> extractResources(ListNotesResponse payload) {
-              return Objects.isNull(payload.getNotesList())
+              return payload.getNotesList() == null
                   ? ImmutableList.<Note>of()
                   : payload.getNotesList();
             }
@@ -242,7 +241,7 @@ public class GrafeasStubSettings extends StubSettings<GrafeasStubSettings> {
 
             @Override
             public Iterable<Occurrence> extractResources(ListNoteOccurrencesResponse payload) {
-              return Objects.isNull(payload.getOccurrencesList())
+              return payload.getOccurrencesList() == null
                   ? ImmutableList.<Occurrence>of()
                   : payload.getOccurrencesList();
             }

@@ -91,7 +91,7 @@ public class NoteName implements ResourceName {
   public static List<String> toStringList(List<NoteName> values) {
     List<String> list = new ArrayList<>(values.size());
     for (NoteName value : values) {
-      if (Objects.isNull(value)) {
+      if (value == null) {
         list.add("");
       } else {
         list.add(value.toString());
@@ -106,14 +106,14 @@ public class NoteName implements ResourceName {
 
   @Override
   public Map<String, String> getFieldValuesMap() {
-    if (Objects.isNull(fieldValuesMap)) {
+    if (fieldValuesMap == null) {
       synchronized (this) {
-        if (Objects.isNull(fieldValuesMap)) {
+        if (fieldValuesMap == null) {
           ImmutableMap.Builder<String, String> fieldMapBuilder = ImmutableMap.builder();
-          if (!Objects.isNull(project)) {
+          if (project != null) {
             fieldMapBuilder.put("project", project);
           }
-          if (!Objects.isNull(note)) {
+          if (note != null) {
             fieldMapBuilder.put("note", note);
           }
           fieldValuesMap = fieldMapBuilder.build();
