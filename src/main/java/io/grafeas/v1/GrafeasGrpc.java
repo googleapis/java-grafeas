@@ -23,23 +23,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * [Grafeas](https://grafeas.io) API.
- * Retrieves analysis results of Cloud components such as Docker container
- * images.
- * Analysis results are stored as a series of occurrences. An `Occurrence`
- * contains information about a specific analysis instance on a resource. An
- * occurrence refers to a `Note`. A note contains details describing the
- * analysis and is generally stored in a separate project, called a `Provider`.
- * Multiple occurrences can refer to the same note.
- * For example, an SSL vulnerability could affect multiple images. In this case,
- * there would be one note for the vulnerability and an occurrence for each
- * image with the vulnerability referring to that note.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: grafeas/v1/grafeas.proto")
@@ -633,86 +617,38 @@ public final class GrafeasGrpc {
     return GrafeasFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * [Grafeas](https://grafeas.io) API.
-   * Retrieves analysis results of Cloud components such as Docker container
-   * images.
-   * Analysis results are stored as a series of occurrences. An `Occurrence`
-   * contains information about a specific analysis instance on a resource. An
-   * occurrence refers to a `Note`. A note contains details describing the
-   * analysis and is generally stored in a separate project, called a `Provider`.
-   * Multiple occurrences can refer to the same note.
-   * For example, an SSL vulnerability could affect multiple images. In this case,
-   * there would be one note for the vulnerability and an occurrence for each
-   * image with the vulnerability referring to that note.
-   * </pre>
-   */
+  /** */
   public abstract static class GrafeasImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified occurrence.
-     * </pre>
-     */
+    /** */
     public void getOccurrence(
         io.grafeas.v1.GetOccurrenceRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Occurrence> responseObserver) {
       asyncUnimplementedUnaryCall(getGetOccurrenceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences for the specified project.
-     * </pre>
-     */
+    /** */
     public void listOccurrences(
         io.grafeas.v1.ListOccurrencesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.ListOccurrencesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getListOccurrencesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified occurrence. For example, use this method to delete an
-     * occurrence when the occurrence is no longer applicable for the given
-     * resource.
-     * </pre>
-     */
+    /** */
     public void deleteOccurrence(
         io.grafeas.v1.DeleteOccurrenceRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteOccurrenceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new occurrence.
-     * </pre>
-     */
+    /** */
     public void createOccurrence(
         io.grafeas.v1.CreateOccurrenceRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Occurrence> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateOccurrenceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new occurrences in batch.
-     * </pre>
-     */
+    /** */
     public void batchCreateOccurrences(
         io.grafeas.v1.BatchCreateOccurrencesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.BatchCreateOccurrencesResponse>
@@ -720,120 +656,63 @@ public final class GrafeasGrpc {
       asyncUnimplementedUnaryCall(getBatchCreateOccurrencesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified occurrence.
-     * </pre>
-     */
+    /** */
     public void updateOccurrence(
         io.grafeas.v1.UpdateOccurrenceRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Occurrence> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateOccurrenceMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the note attached to the specified occurrence. Consumer projects can
-     * use this method to get a note that belongs to a provider project.
-     * </pre>
-     */
+    /** */
     public void getOccurrenceNote(
         io.grafeas.v1.GetOccurrenceNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
       asyncUnimplementedUnaryCall(getGetOccurrenceNoteMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified note.
-     * </pre>
-     */
+    /** */
     public void getNote(
         io.grafeas.v1.GetNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
       asyncUnimplementedUnaryCall(getGetNoteMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists notes for the specified project.
-     * </pre>
-     */
+    /** */
     public void listNotes(
         io.grafeas.v1.ListNotesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.ListNotesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getListNotesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified note.
-     * </pre>
-     */
+    /** */
     public void deleteNote(
         io.grafeas.v1.DeleteNoteRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteNoteMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new note.
-     * </pre>
-     */
+    /** */
     public void createNote(
         io.grafeas.v1.CreateNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateNoteMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new notes in batch.
-     * </pre>
-     */
+    /** */
     public void batchCreateNotes(
         io.grafeas.v1.BatchCreateNotesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.BatchCreateNotesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getBatchCreateNotesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified note.
-     * </pre>
-     */
+    /** */
     public void updateNote(
         io.grafeas.v1.UpdateNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateNoteMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences referencing the specified note. Provider projects can use
-     * this method to get all occurrences across consumer projects referencing the
-     * specified note.
-     * </pre>
-     */
+    /** */
     public void listNoteOccurrences(
         io.grafeas.v1.ListNoteOccurrencesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.ListNoteOccurrencesResponse> responseObserver) {
@@ -927,23 +806,7 @@ public final class GrafeasGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * [Grafeas](https://grafeas.io) API.
-   * Retrieves analysis results of Cloud components such as Docker container
-   * images.
-   * Analysis results are stored as a series of occurrences. An `Occurrence`
-   * contains information about a specific analysis instance on a resource. An
-   * occurrence refers to a `Note`. A note contains details describing the
-   * analysis and is generally stored in a separate project, called a `Provider`.
-   * Multiple occurrences can refer to the same note.
-   * For example, an SSL vulnerability could affect multiple images. In this case,
-   * there would be one note for the vulnerability and an occurrence for each
-   * image with the vulnerability referring to that note.
-   * </pre>
-   */
+  /** */
   public static final class GrafeasStub extends io.grpc.stub.AbstractAsyncStub<GrafeasStub> {
     private GrafeasStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
@@ -954,13 +817,7 @@ public final class GrafeasGrpc {
       return new GrafeasStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified occurrence.
-     * </pre>
-     */
+    /** */
     public void getOccurrence(
         io.grafeas.v1.GetOccurrenceRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Occurrence> responseObserver) {
@@ -970,13 +827,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences for the specified project.
-     * </pre>
-     */
+    /** */
     public void listOccurrences(
         io.grafeas.v1.ListOccurrencesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.ListOccurrencesResponse> responseObserver) {
@@ -986,15 +837,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified occurrence. For example, use this method to delete an
-     * occurrence when the occurrence is no longer applicable for the given
-     * resource.
-     * </pre>
-     */
+    /** */
     public void deleteOccurrence(
         io.grafeas.v1.DeleteOccurrenceRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -1004,13 +847,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new occurrence.
-     * </pre>
-     */
+    /** */
     public void createOccurrence(
         io.grafeas.v1.CreateOccurrenceRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Occurrence> responseObserver) {
@@ -1020,13 +857,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new occurrences in batch.
-     * </pre>
-     */
+    /** */
     public void batchCreateOccurrences(
         io.grafeas.v1.BatchCreateOccurrencesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.BatchCreateOccurrencesResponse>
@@ -1037,13 +868,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified occurrence.
-     * </pre>
-     */
+    /** */
     public void updateOccurrence(
         io.grafeas.v1.UpdateOccurrenceRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Occurrence> responseObserver) {
@@ -1053,14 +878,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the note attached to the specified occurrence. Consumer projects can
-     * use this method to get a note that belongs to a provider project.
-     * </pre>
-     */
+    /** */
     public void getOccurrenceNote(
         io.grafeas.v1.GetOccurrenceNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
@@ -1070,13 +888,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified note.
-     * </pre>
-     */
+    /** */
     public void getNote(
         io.grafeas.v1.GetNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
@@ -1084,13 +896,7 @@ public final class GrafeasGrpc {
           getChannel().newCall(getGetNoteMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists notes for the specified project.
-     * </pre>
-     */
+    /** */
     public void listNotes(
         io.grafeas.v1.ListNotesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.ListNotesResponse> responseObserver) {
@@ -1098,13 +904,7 @@ public final class GrafeasGrpc {
           getChannel().newCall(getListNotesMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified note.
-     * </pre>
-     */
+    /** */
     public void deleteNote(
         io.grafeas.v1.DeleteNoteRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -1112,13 +912,7 @@ public final class GrafeasGrpc {
           getChannel().newCall(getDeleteNoteMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new note.
-     * </pre>
-     */
+    /** */
     public void createNote(
         io.grafeas.v1.CreateNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
@@ -1126,13 +920,7 @@ public final class GrafeasGrpc {
           getChannel().newCall(getCreateNoteMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new notes in batch.
-     * </pre>
-     */
+    /** */
     public void batchCreateNotes(
         io.grafeas.v1.BatchCreateNotesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.BatchCreateNotesResponse> responseObserver) {
@@ -1142,13 +930,7 @@ public final class GrafeasGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified note.
-     * </pre>
-     */
+    /** */
     public void updateNote(
         io.grafeas.v1.UpdateNoteRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.Note> responseObserver) {
@@ -1156,15 +938,7 @@ public final class GrafeasGrpc {
           getChannel().newCall(getUpdateNoteMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences referencing the specified note. Provider projects can use
-     * this method to get all occurrences across consumer projects referencing the
-     * specified note.
-     * </pre>
-     */
+    /** */
     public void listNoteOccurrences(
         io.grafeas.v1.ListNoteOccurrencesRequest request,
         io.grpc.stub.StreamObserver<io.grafeas.v1.ListNoteOccurrencesResponse> responseObserver) {
@@ -1175,23 +949,7 @@ public final class GrafeasGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * [Grafeas](https://grafeas.io) API.
-   * Retrieves analysis results of Cloud components such as Docker container
-   * images.
-   * Analysis results are stored as a series of occurrences. An `Occurrence`
-   * contains information about a specific analysis instance on a resource. An
-   * occurrence refers to a `Note`. A note contains details describing the
-   * analysis and is generally stored in a separate project, called a `Provider`.
-   * Multiple occurrences can refer to the same note.
-   * For example, an SSL vulnerability could affect multiple images. In this case,
-   * there would be one note for the vulnerability and an occurrence for each
-   * image with the vulnerability referring to that note.
-   * </pre>
-   */
+  /** */
   public static final class GrafeasBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<GrafeasBlockingStub> {
     private GrafeasBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -1203,173 +961,84 @@ public final class GrafeasGrpc {
       return new GrafeasBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified occurrence.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Occurrence getOccurrence(io.grafeas.v1.GetOccurrenceRequest request) {
       return blockingUnaryCall(getChannel(), getGetOccurrenceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences for the specified project.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.ListOccurrencesResponse listOccurrences(
         io.grafeas.v1.ListOccurrencesRequest request) {
       return blockingUnaryCall(getChannel(), getListOccurrencesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified occurrence. For example, use this method to delete an
-     * occurrence when the occurrence is no longer applicable for the given
-     * resource.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteOccurrence(
         io.grafeas.v1.DeleteOccurrenceRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteOccurrenceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new occurrence.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Occurrence createOccurrence(
         io.grafeas.v1.CreateOccurrenceRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateOccurrenceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new occurrences in batch.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.BatchCreateOccurrencesResponse batchCreateOccurrences(
         io.grafeas.v1.BatchCreateOccurrencesRequest request) {
       return blockingUnaryCall(
           getChannel(), getBatchCreateOccurrencesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified occurrence.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Occurrence updateOccurrence(
         io.grafeas.v1.UpdateOccurrenceRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateOccurrenceMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the note attached to the specified occurrence. Consumer projects can
-     * use this method to get a note that belongs to a provider project.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Note getOccurrenceNote(io.grafeas.v1.GetOccurrenceNoteRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetOccurrenceNoteMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified note.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Note getNote(io.grafeas.v1.GetNoteRequest request) {
       return blockingUnaryCall(getChannel(), getGetNoteMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists notes for the specified project.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.ListNotesResponse listNotes(io.grafeas.v1.ListNotesRequest request) {
       return blockingUnaryCall(getChannel(), getListNotesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified note.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteNote(io.grafeas.v1.DeleteNoteRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteNoteMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new note.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Note createNote(io.grafeas.v1.CreateNoteRequest request) {
       return blockingUnaryCall(getChannel(), getCreateNoteMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new notes in batch.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.BatchCreateNotesResponse batchCreateNotes(
         io.grafeas.v1.BatchCreateNotesRequest request) {
       return blockingUnaryCall(
           getChannel(), getBatchCreateNotesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified note.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.Note updateNote(io.grafeas.v1.UpdateNoteRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateNoteMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences referencing the specified note. Provider projects can use
-     * this method to get all occurrences across consumer projects referencing the
-     * specified note.
-     * </pre>
-     */
+    /** */
     public io.grafeas.v1.ListNoteOccurrencesResponse listNoteOccurrences(
         io.grafeas.v1.ListNoteOccurrencesRequest request) {
       return blockingUnaryCall(
@@ -1377,23 +1046,7 @@ public final class GrafeasGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * [Grafeas](https://grafeas.io) API.
-   * Retrieves analysis results of Cloud components such as Docker container
-   * images.
-   * Analysis results are stored as a series of occurrences. An `Occurrence`
-   * contains information about a specific analysis instance on a resource. An
-   * occurrence refers to a `Note`. A note contains details describing the
-   * analysis and is generally stored in a separate project, called a `Provider`.
-   * Multiple occurrences can refer to the same note.
-   * For example, an SSL vulnerability could affect multiple images. In this case,
-   * there would be one note for the vulnerability and an occurrence for each
-   * image with the vulnerability referring to that note.
-   * </pre>
-   */
+  /** */
   public static final class GrafeasFutureStub
       extends io.grpc.stub.AbstractFutureStub<GrafeasFutureStub> {
     private GrafeasFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -1405,67 +1058,35 @@ public final class GrafeasGrpc {
       return new GrafeasFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified occurrence.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Occurrence>
         getOccurrence(io.grafeas.v1.GetOccurrenceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetOccurrenceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences for the specified project.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.ListOccurrencesResponse>
         listOccurrences(io.grafeas.v1.ListOccurrencesRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getListOccurrencesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified occurrence. For example, use this method to delete an
-     * occurrence when the occurrence is no longer applicable for the given
-     * resource.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteOccurrence(io.grafeas.v1.DeleteOccurrenceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteOccurrenceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new occurrence.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Occurrence>
         createOccurrence(io.grafeas.v1.CreateOccurrenceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateOccurrenceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new occurrences in batch.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             io.grafeas.v1.BatchCreateOccurrencesResponse>
         batchCreateOccurrences(io.grafeas.v1.BatchCreateOccurrencesRequest request) {
@@ -1473,90 +1094,47 @@ public final class GrafeasGrpc {
           getChannel().newCall(getBatchCreateOccurrencesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified occurrence.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Occurrence>
         updateOccurrence(io.grafeas.v1.UpdateOccurrenceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateOccurrenceMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the note attached to the specified occurrence. Consumer projects can
-     * use this method to get a note that belongs to a provider project.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Note> getOccurrenceNote(
         io.grafeas.v1.GetOccurrenceNoteRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetOccurrenceNoteMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the specified note.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Note> getNote(
         io.grafeas.v1.GetNoteRequest request) {
       return futureUnaryCall(getChannel().newCall(getGetNoteMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists notes for the specified project.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.ListNotesResponse>
         listNotes(io.grafeas.v1.ListNotesRequest request) {
       return futureUnaryCall(getChannel().newCall(getListNotesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes the specified note.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty> deleteNote(
         io.grafeas.v1.DeleteNoteRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteNoteMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new note.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Note> createNote(
         io.grafeas.v1.CreateNoteRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateNoteMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new notes in batch.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             io.grafeas.v1.BatchCreateNotesResponse>
         batchCreateNotes(io.grafeas.v1.BatchCreateNotesRequest request) {
@@ -1564,28 +1142,14 @@ public final class GrafeasGrpc {
           getChannel().newCall(getBatchCreateNotesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the specified note.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<io.grafeas.v1.Note> updateNote(
         io.grafeas.v1.UpdateNoteRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateNoteMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists occurrences referencing the specified note. Provider projects can use
-     * this method to get all occurrences across consumer projects referencing the
-     * specified note.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             io.grafeas.v1.ListNoteOccurrencesResponse>
         listNoteOccurrences(io.grafeas.v1.ListNoteOccurrencesRequest request) {
