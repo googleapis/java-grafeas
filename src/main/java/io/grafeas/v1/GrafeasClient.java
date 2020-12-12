@@ -34,7 +34,6 @@ import io.grafeas.v1.stub.GrafeasStubSettings;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -163,9 +162,7 @@ public class GrafeasClient implements BackgroundResource {
    */
   public final Occurrence getOccurrence(OccurrenceName name) {
     GetOccurrenceRequest request =
-        GetOccurrenceRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetOccurrenceRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getOccurrence(request);
   }
 
@@ -215,7 +212,7 @@ public class GrafeasClient implements BackgroundResource {
   public final ListOccurrencesPagedResponse listOccurrences(ProjectName parent, String filter) {
     ListOccurrencesRequest request =
         ListOccurrencesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listOccurrences(request);
@@ -280,9 +277,7 @@ public class GrafeasClient implements BackgroundResource {
    */
   public final void deleteOccurrence(OccurrenceName name) {
     DeleteOccurrenceRequest request =
-        DeleteOccurrenceRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        DeleteOccurrenceRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     deleteOccurrence(request);
   }
 
@@ -335,7 +330,7 @@ public class GrafeasClient implements BackgroundResource {
   public final Occurrence createOccurrence(ProjectName parent, Occurrence occurrence) {
     CreateOccurrenceRequest request =
         CreateOccurrenceRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setOccurrence(occurrence)
             .build();
     return createOccurrence(request);
@@ -390,7 +385,7 @@ public class GrafeasClient implements BackgroundResource {
       ProjectName parent, List<Occurrence> occurrences) {
     BatchCreateOccurrencesRequest request =
         BatchCreateOccurrencesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .addAllOccurrences(occurrences)
             .build();
     return batchCreateOccurrences(request);
@@ -452,7 +447,7 @@ public class GrafeasClient implements BackgroundResource {
       OccurrenceName name, Occurrence occurrence, FieldMask updateMask) {
     UpdateOccurrenceRequest request =
         UpdateOccurrenceRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setOccurrence(occurrence)
             .setUpdateMask(updateMask)
             .build();
@@ -513,7 +508,7 @@ public class GrafeasClient implements BackgroundResource {
   public final Note getOccurrenceNote(OccurrenceName name) {
     GetOccurrenceNoteRequest request =
         GetOccurrenceNoteRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     return getOccurrenceNote(request);
   }
@@ -564,7 +559,7 @@ public class GrafeasClient implements BackgroundResource {
    */
   public final Note getNote(NoteName name) {
     GetNoteRequest request =
-        GetNoteRequest.newBuilder().setName(Objects.isNull(name) ? null : name.toString()).build();
+        GetNoteRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getNote(request);
   }
 
@@ -612,7 +607,7 @@ public class GrafeasClient implements BackgroundResource {
   public final ListNotesPagedResponse listNotes(ProjectName parent, String filter) {
     ListNotesRequest request =
         ListNotesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listNotes(request);
@@ -672,9 +667,7 @@ public class GrafeasClient implements BackgroundResource {
    */
   public final void deleteNote(NoteName name) {
     DeleteNoteRequest request =
-        DeleteNoteRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        DeleteNoteRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     deleteNote(request);
   }
 
@@ -724,7 +717,7 @@ public class GrafeasClient implements BackgroundResource {
   public final Note createNote(ProjectName parent, String noteId, Note note) {
     CreateNoteRequest request =
         CreateNoteRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setNoteId(noteId)
             .setNote(note)
             .build();
@@ -781,7 +774,7 @@ public class GrafeasClient implements BackgroundResource {
       ProjectName parent, Map<String, Note> notes) {
     BatchCreateNotesRequest request =
         BatchCreateNotesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .putAllNotes(notes)
             .build();
     return batchCreateNotes(request);
@@ -836,7 +829,7 @@ public class GrafeasClient implements BackgroundResource {
   public final Note updateNote(NoteName name, Note note, FieldMask updateMask) {
     UpdateNoteRequest request =
         UpdateNoteRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setNote(note)
             .setUpdateMask(updateMask)
             .build();
@@ -896,7 +889,7 @@ public class GrafeasClient implements BackgroundResource {
   public final ListNoteOccurrencesPagedResponse listNoteOccurrences(NoteName name, String filter) {
     ListNoteOccurrencesRequest request =
         ListNoteOccurrencesRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setFilter(filter)
             .build();
     return listNoteOccurrences(request);
