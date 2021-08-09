@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/googleapis/java-grafeas/compare/v1.2.3...v1.3.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#344](https://www.github.com/googleapis/java-grafeas/issues/344)) ([517d817](https://www.github.com/googleapis/java-grafeas/commit/517d81774d9142c0be5374f6aaa38c6ff516f262))
+
 ### [1.2.3](https://www.github.com/googleapis/java-grafeas/compare/v1.2.2...v1.2.3) (2021-07-01)
 
 
