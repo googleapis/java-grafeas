@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.grafeas</groupId>
   <artifactId>grafeas</artifactId>
-  <version>2.0.2-SNAPSHOT</version><!-- {x-version-update:grafeas:current} -->
+  <version>2.0.3-SNAPSHOT</version><!-- {x-version-update:grafeas:current} -->
   <packaging>jar</packaging>
   <name>Grafeas Client</name>
   <url>https://github.com/googleapis/google-cloud-java/tree/master/google-cloud-clients/grafeas
@@ -57,7 +57,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-shared-dependencies</artifactId>
-        <version>2.1.0</version>
+        <version>2.2.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -197,7 +197,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <reportSets>
           <reportSet>
             <id>html</id>
