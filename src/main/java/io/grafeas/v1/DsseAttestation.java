@@ -66,7 +66,8 @@ public final class DsseAttestation {
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
             descriptorData,
             new com.google.protobuf.Descriptors.FileDescriptor[] {
-              io.grafeas.v1.Common.getDescriptor(), io.grafeas.v1.IntotoStatement.getDescriptor(),
+              io.grafeas.v1.Common.getDescriptor(),
+              io.grafeas.v1.InTotoStatementProto.getDescriptor(),
             });
     internal_static_grafeas_v1_DSSEAttestationNote_descriptor =
         getDescriptor().getMessageTypes().get(0);
@@ -93,7 +94,7 @@ public final class DsseAttestation {
               "Envelope", "Statement", "DecodedPayload",
             });
     io.grafeas.v1.Common.getDescriptor();
-    io.grafeas.v1.IntotoStatement.getDescriptor();
+    io.grafeas.v1.InTotoStatementProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

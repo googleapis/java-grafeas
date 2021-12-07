@@ -104,7 +104,7 @@ public final class Subject extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-    return io.grafeas.v1.IntotoStatement.internal_static_grafeas_v1_Subject_descriptor;
+    return io.grafeas.v1.InTotoStatementProto.internal_static_grafeas_v1_Subject_descriptor;
   }
 
   @SuppressWarnings({"rawtypes"})
@@ -121,7 +121,7 @@ public final class Subject extends com.google.protobuf.GeneratedMessageV3
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grafeas.v1.IntotoStatement.internal_static_grafeas_v1_Subject_fieldAccessorTable
+    return io.grafeas.v1.InTotoStatementProto.internal_static_grafeas_v1_Subject_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             io.grafeas.v1.Subject.class, io.grafeas.v1.Subject.Builder.class);
   }
@@ -168,7 +168,8 @@ public final class Subject extends com.google.protobuf.GeneratedMessageV3
   private static final class DigestDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<java.lang.String, java.lang.String> defaultEntry =
         com.google.protobuf.MapEntry.<java.lang.String, java.lang.String>newDefaultInstance(
-            io.grafeas.v1.IntotoStatement.internal_static_grafeas_v1_Subject_DigestEntry_descriptor,
+            io.grafeas.v1.InTotoStatementProto
+                .internal_static_grafeas_v1_Subject_DigestEntry_descriptor,
             com.google.protobuf.WireFormat.FieldType.STRING,
             "",
             com.google.protobuf.WireFormat.FieldType.STRING,
@@ -452,7 +453,7 @@ public final class Subject extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(builder_implements:grafeas.v1.Subject)
       io.grafeas.v1.SubjectOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return io.grafeas.v1.IntotoStatement.internal_static_grafeas_v1_Subject_descriptor;
+      return io.grafeas.v1.InTotoStatementProto.internal_static_grafeas_v1_Subject_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -478,7 +479,8 @@ public final class Subject extends com.google.protobuf.GeneratedMessageV3
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grafeas.v1.IntotoStatement.internal_static_grafeas_v1_Subject_fieldAccessorTable
+      return io.grafeas.v1.InTotoStatementProto
+          .internal_static_grafeas_v1_Subject_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               io.grafeas.v1.Subject.class, io.grafeas.v1.Subject.Builder.class);
     }
@@ -508,7 +510,7 @@ public final class Subject extends com.google.protobuf.GeneratedMessageV3
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-      return io.grafeas.v1.IntotoStatement.internal_static_grafeas_v1_Subject_descriptor;
+      return io.grafeas.v1.InTotoStatementProto.internal_static_grafeas_v1_Subject_descriptor;
     }
 
     @java.lang.Override

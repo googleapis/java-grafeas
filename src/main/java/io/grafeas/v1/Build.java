@@ -62,8 +62,8 @@ public final class Build {
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
             descriptorData,
             new com.google.protobuf.Descriptors.FileDescriptor[] {
-              io.grafeas.v1.IntotoProvenance.getDescriptor(),
-              io.grafeas.v1.IntotoStatement.getDescriptor(),
+              io.grafeas.v1.InTotoProvenanceProto.getDescriptor(),
+              io.grafeas.v1.InTotoStatementProto.getDescriptor(),
               io.grafeas.v1.Provenance.getDescriptor(),
             });
     internal_static_grafeas_v1_BuildNote_descriptor = getDescriptor().getMessageTypes().get(0);
@@ -81,8 +81,8 @@ public final class Build {
             new java.lang.String[] {
               "Provenance", "ProvenanceBytes", "IntotoProvenance", "IntotoStatement",
             });
-    io.grafeas.v1.IntotoProvenance.getDescriptor();
-    io.grafeas.v1.IntotoStatement.getDescriptor();
+    io.grafeas.v1.InTotoProvenanceProto.getDescriptor();
+    io.grafeas.v1.InTotoStatementProto.getDescriptor();
     io.grafeas.v1.Provenance.getDescriptor();
   }
 

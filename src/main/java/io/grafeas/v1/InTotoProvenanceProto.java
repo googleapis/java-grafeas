@@ -19,8 +19,8 @@
 
 package io.grafeas.v1;
 
-public final class IntotoProvenance {
-  private IntotoProvenance() {}
+public final class InTotoProvenanceProto {
+  private InTotoProvenanceProto() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
 
@@ -76,9 +76,9 @@ public final class IntotoProvenance {
           + "grafeas.v1.BuilderConfig\022\"\n\006recipe\030\002 \001(\013"
           + "2\022.grafeas.v1.Recipe\022&\n\010metadata\030\003 \001(\0132\024"
           + ".grafeas.v1.Metadata\022\021\n\tmaterials\030\004 \003(\tB"
-          + "Q\n\rio.grafeas.v1P\001Z8google.golang.org/ge"
-          + "nproto/googleapis/grafeas/v1;grafeas\242\002\003G"
-          + "RAb\006proto3"
+          + "h\n\rio.grafeas.v1B\025InTotoProvenanceProtoP"
+          + "\001Z8google.golang.org/genproto/googleapis"
+          + "/grafeas/v1;grafeas\242\002\003GRAb\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

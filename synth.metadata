@@ -11,8 +11,8 @@
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "2921f9fb3bfbd16f6b2da0104373e2b47a80a65e",
-        "internalRef": "408420890"
+        "sha": "297bfd86f13acc8e06251bc0b23207f91bcba081",
+        "internalRef": "414718329"
       }
     },
     {
@@ -205,10 +205,10 @@
     "src/main/java/io/grafeas/v1/ImageOccurrenceOrBuilder.java",
     "src/main/java/io/grafeas/v1/InTotoProvenance.java",
     "src/main/java/io/grafeas/v1/InTotoProvenanceOrBuilder.java",
+    "src/main/java/io/grafeas/v1/InTotoProvenanceProto.java",
     "src/main/java/io/grafeas/v1/InTotoStatement.java",
     "src/main/java/io/grafeas/v1/InTotoStatementOrBuilder.java",
-    "src/main/java/io/grafeas/v1/IntotoProvenance.java",
-    "src/main/java/io/grafeas/v1/IntotoStatement.java",
+    "src/main/java/io/grafeas/v1/InTotoStatementProto.java",
     "src/main/java/io/grafeas/v1/Jwt.java",
     "src/main/java/io/grafeas/v1/JwtOrBuilder.java",
     "src/main/java/io/grafeas/v1/Layer.java",

@@ -148,13 +148,14 @@ public final class Metadata extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-    return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Metadata_descriptor;
+    return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Metadata_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Metadata_fieldAccessorTable
+    return io.grafeas.v1.InTotoProvenanceProto
+        .internal_static_grafeas_v1_Metadata_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             io.grafeas.v1.Metadata.class, io.grafeas.v1.Metadata.Builder.class);
   }
@@ -598,13 +599,14 @@ public final class Metadata extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(builder_implements:grafeas.v1.Metadata)
       io.grafeas.v1.MetadataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Metadata_descriptor;
+      return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Metadata_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Metadata_fieldAccessorTable
+      return io.grafeas.v1.InTotoProvenanceProto
+          .internal_static_grafeas_v1_Metadata_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               io.grafeas.v1.Metadata.class, io.grafeas.v1.Metadata.Builder.class);
     }
@@ -653,7 +655,7 @@ public final class Metadata extends com.google.protobuf.GeneratedMessageV3
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Metadata_descriptor;
+      return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Metadata_descriptor;
     }
 
     @java.lang.Override

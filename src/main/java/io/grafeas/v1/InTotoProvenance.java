@@ -140,13 +140,14 @@ public final class InTotoProvenance extends com.google.protobuf.GeneratedMessage
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-    return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_InTotoProvenance_descriptor;
+    return io.grafeas.v1.InTotoProvenanceProto
+        .internal_static_grafeas_v1_InTotoProvenance_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grafeas.v1.IntotoProvenance
+    return io.grafeas.v1.InTotoProvenanceProto
         .internal_static_grafeas_v1_InTotoProvenance_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             io.grafeas.v1.InTotoProvenance.class, io.grafeas.v1.InTotoProvenance.Builder.class);
@@ -566,13 +567,14 @@ public final class InTotoProvenance extends com.google.protobuf.GeneratedMessage
       // @@protoc_insertion_point(builder_implements:grafeas.v1.InTotoProvenance)
       io.grafeas.v1.InTotoProvenanceOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_InTotoProvenance_descriptor;
+      return io.grafeas.v1.InTotoProvenanceProto
+          .internal_static_grafeas_v1_InTotoProvenance_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grafeas.v1.IntotoProvenance
+      return io.grafeas.v1.InTotoProvenanceProto
           .internal_static_grafeas_v1_InTotoProvenance_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               io.grafeas.v1.InTotoProvenance.class, io.grafeas.v1.InTotoProvenance.Builder.class);
@@ -620,7 +622,8 @@ public final class InTotoProvenance extends com.google.protobuf.GeneratedMessage
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_InTotoProvenance_descriptor;
+      return io.grafeas.v1.InTotoProvenanceProto
+          .internal_static_grafeas_v1_InTotoProvenance_descriptor;
     }
 
     @java.lang.Override

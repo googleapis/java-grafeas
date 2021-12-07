@@ -19,8 +19,8 @@
 
 package io.grafeas.v1;
 
-public final class IntotoStatement {
-  private IntotoStatement() {}
+public final class InTotoStatementProto {
+  private InTotoStatementProto() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
 
@@ -60,15 +60,16 @@ public final class IntotoStatement {
           + "nanceH\000B\013\n\tpredicate\"w\n\007Subject\022\014\n\004name\030"
           + "\001 \001(\t\022/\n\006digest\030\002 \003(\0132\037.grafeas.v1.Subje"
           + "ct.DigestEntry\032-\n\013DigestEntry\022\013\n\003key\030\001 \001"
-          + "(\t\022\r\n\005value\030\002 \001(\t:\0028\001BQ\n\rio.grafeas.v1P\001"
-          + "Z8google.golang.org/genproto/googleapis/"
-          + "grafeas/v1;grafeas\242\002\003GRAb\006proto3"
+          + "(\t\022\r\n\005value\030\002 \001(\t:\0028\001Bg\n\rio.grafeas.v1B\024"
+          + "InTotoStatementProtoP\001Z8google.golang.or"
+          + "g/genproto/googleapis/grafeas/v1;grafeas"
+          + "\242\002\003GRAb\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
             descriptorData,
             new com.google.protobuf.Descriptors.FileDescriptor[] {
-              io.grafeas.v1.IntotoProvenance.getDescriptor(),
+              io.grafeas.v1.InTotoProvenanceProto.getDescriptor(),
               io.grafeas.v1.SlsaProvenanceOuterClass.getDescriptor(),
             });
     internal_static_grafeas_v1_InTotoStatement_descriptor =
@@ -94,7 +95,7 @@ public final class IntotoStatement {
             new java.lang.String[] {
               "Key", "Value",
             });
-    io.grafeas.v1.IntotoProvenance.getDescriptor();
+    io.grafeas.v1.InTotoProvenanceProto.getDescriptor();
     io.grafeas.v1.SlsaProvenanceOuterClass.getDescriptor();
   }
 

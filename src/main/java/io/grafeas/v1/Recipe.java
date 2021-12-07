@@ -142,13 +142,13 @@ public final class Recipe extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-    return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Recipe_descriptor;
+    return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Recipe_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Recipe_fieldAccessorTable
+    return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Recipe_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             io.grafeas.v1.Recipe.class, io.grafeas.v1.Recipe.Builder.class);
   }
@@ -672,13 +672,14 @@ public final class Recipe extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(builder_implements:grafeas.v1.Recipe)
       io.grafeas.v1.RecipeOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Recipe_descriptor;
+      return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Recipe_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Recipe_fieldAccessorTable
+      return io.grafeas.v1.InTotoProvenanceProto
+          .internal_static_grafeas_v1_Recipe_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               io.grafeas.v1.Recipe.class, io.grafeas.v1.Recipe.Builder.class);
     }
@@ -726,7 +727,7 @@ public final class Recipe extends com.google.protobuf.GeneratedMessageV3
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-      return io.grafeas.v1.IntotoProvenance.internal_static_grafeas_v1_Recipe_descriptor;
+      return io.grafeas.v1.InTotoProvenanceProto.internal_static_grafeas_v1_Recipe_descriptor;
     }
 
     @java.lang.Override
