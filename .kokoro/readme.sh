@@ -15,7 +15,7 @@
 
 set -eo pipefail
 
-cd ${KOKORO_ARTIFACTS_DIR}/github/java-grafeas
+cd ${KOKORO_ARTIFACTS_DIR}/github/containeranalysis
 
 # Disable buffering, so that the logs stream through.
 export PYTHONUNBUFFERED=1
