@@ -8,7 +8,7 @@
     "release_level": "stable",
     "language": "java",
     "repo": "googleapis/java-grafeas",
-    "repo_short": "java-grafeas",
+    "repo_short": "containeranalysis",
     "distribution_name": "io.grafeas:grafeas",
     "api_id": "",
     "codeowner_team": "@googleapis/aap-dpes",
