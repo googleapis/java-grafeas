@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.7](https://github.com/googleapis/java-grafeas/compare/v2.4.6...v2.4.7) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([7b7b38e](https://github.com/googleapis/java-grafeas/commit/7b7b38e560aaedf7d029e1683284f904076d2ca9))
+
 ## [2.4.6](https://github.com/googleapis/java-grafeas/compare/v2.4.5...v2.4.6) (2022-10-03)
 
 
